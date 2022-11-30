@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FF6464;
+    background: -moz-linear-gradient(161deg, #333333 27%, #efab6e 100%);
+}
+
+h1{
+    width: 50%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 35px;
+}
+
+h3{
+    color: #FFFFFF;
+}
+
+form{
+    width: 50%;
+    padding: 90px;
+    /* Início do Glassmorphism */
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.60);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* Fim do Glassmorphismo */
+}
+
+.area-message{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.area-message input{
+    height: 120px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#formacao{
+    border: none;
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.60);
+    color: #FF6464;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#descricao{
+    border: none;
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.60);
+    color: #FF6464;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+
+/* Propiedades do Botão */
+.area-do-botao{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#botao-enviar{
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 45px;
+    background-color: #333333;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.60);
+    color: #FF6464;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao-enviar:hover{
+    transition: .2s ease;
+    background-color: #3d3d3d;
+}
+
+#botao-return{
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 45px;
+    background-color: #333333;
+    box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.60);
+    color: #FF6464;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao-return:hover{
+    transition: .2s ease;
+    background-color: #3d3d3d;
+}
+
+input{
+    color: #FF6464;
+    font-weight: bold;
+    height: 45px;
+    padding-left: 10px;
+
+    /*** Glassmorphismo no input ***/
+
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    /*** Fim do Glassmorphismo no input ***/
+}
+
+input::placeholder{
+    color: #FF6464;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #FF6464;
+    font-weight: bold;
+}
+
+footer{
+    position: absolute;
+    top: 90vh;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
